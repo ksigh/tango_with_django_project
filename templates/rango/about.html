@@ -1,5 +1,5 @@
-{% load static %}
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,8 +11,9 @@
     here is the about page. <br/>
     <strong>{{ boldmessage }}</strong><br/>
 </div>
-<div><a href="/rango/index/">Index</a><br/>
-    <img src="{% static 'media/cat.jpg' %}" alt="Picture of Arcane"/> <!-- New line -->
+<div><a href="/rango/">Index</a><br/>
+    <img src="{{ MEDIA_URL }}cat.jpg" alt="Picture of a Cat"/>
+    <img src="{% static 'images/Rango.jpg' %}" alt="Picture of Rango"/>
 </div>
 
 </body>
