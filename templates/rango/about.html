@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rango</title>
+</head>
+<body>
+<h1>Rango says...</h1>
+<div>
+    here is the about page. <br/>
+    <strong>{{ boldmessage }}</strong><br/>
+</div>
+<div><a href="/rango/index/">Index</a><br/>
+    <img src="{% static 'media/cat.jpg' %}" alt="Picture of Arcane"/> <!-- New line -->
+</div>
+
+</body>
+</html>
