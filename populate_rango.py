@@ -22,7 +22,7 @@ def populate():
          'views': 30},
         {'title': 'How to Think like a Computer Scientist',
          'url': 'http://www.greenteapress.com/thinkpython',
-         'views': 20},
+         'views': 60},
         {'title': 'Learn Python in 10 Minutes',
          'url': 'http://www.korokithakis.net/tutorials/python/',
          'views': 10}]
@@ -47,7 +47,7 @@ def populate():
          'views': 15}]
 
     cats = {'Python': {'pages': python_pages, 'views': 128, 'likes': 64},
-            'Django': {'pages': django_pages, 'views': 64, 'likes': 32},
+            'Django': {'pages': django_pages, 'views': 64, 'likes': 128},
             'Other Frameworks': {'pages': other_pages, 'views': 32, 'likes': 16}}
 
     # If you want to add more categories or pages,
