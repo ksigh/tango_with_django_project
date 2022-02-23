@@ -77,6 +77,9 @@ def add_page(request, category_name_slug):
     except Category.DoesNotExist:
         category = None
 
+    if category is None:
+        return redirect('/rango/')
+
     form = PageForm()
     if request.method == 'POST':
         form = PageForm(request.POST)
@@ -91,4 +94,4 @@ def add_page(request, category_name_slug):
             print(form.errors)
 
     context_dict = {'form': form, 'category': category}
-    return render(request, 'rango/add_page.html', context_dict)
+    return render(request, 'rango/add_page.html', context=context_dict)
